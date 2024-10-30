@@ -252,7 +252,7 @@ header {
 
     /* Ajusta a seção de vídeo */
     .video-background {
-        height: 85vh; /* Reduz a altura para melhor ajuste em telas menores */
+        height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
     }
 
     /* Centraliza o menu em dispositivos menores */
