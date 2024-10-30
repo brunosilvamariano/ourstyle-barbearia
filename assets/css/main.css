@@ -247,12 +247,12 @@ header {
     
     /* Ajusta o scroll container */
     .scroll-container {
-        bottom: 10px;
+        bottom: 150px;
     }
 
     /* Ajusta a seção de vídeo */
     .video-background {
-        height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
+        height: 85vh; /* Reduz a altura para melhor ajuste em telas menores */
     }
 
     /* Centraliza o menu em dispositivos menores */
