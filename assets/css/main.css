@@ -221,3 +221,50 @@ header {
     font-size: 1rem; /* Tamanho do texto */
     font-weight: 600; /* Peso do texto */
 }
+
+/* Responsividade - Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    /* Ajusta o tamanho da fonte e margens para o título */
+    .title {
+        font-size: 4rem; /* Reduz o título */
+    }
+    
+    .title-span {
+        font-size: 5rem; /* Reduz a fonte do título principal */
+    }
+
+    /* Ajusta o tamanho da fonte da descrição */
+    .description {
+        font-size: 1.2rem; /* Tamanho menor para a descrição */
+        margin-bottom: 1rem; /* Menor espaçamento */
+    }
+
+    /* Ajusta o botão customizado */
+    .btn-custom {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+    
+    /* Ajusta o scroll container */
+    .scroll-container {
+        bottom: 10px;
+    }
+
+    /* Ajusta a seção de vídeo */
+    .video-background {
+        height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
+    }
+
+    /* Centraliza o menu em dispositivos menores */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ajusta o botão de rolagem para tela menor */
+    .scroll-button {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+}
