@@ -32,7 +32,7 @@ body {
     padding-top: 0px; /* Ajuste para header fixo */
     background-color: var(--cor-fundo);
     color: var(--cor-texto-principal);
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -129,6 +129,10 @@ header {
     object-fit: cover; /* Cobre toda a área mantendo proporção */
 }
 
+.video-background .background-video {
+    transition: transform 0.3s ease; /* Transição suave ao ajustar */
+}
+
 /* Estilos do conteúdo */
 .content {
     color: var(--cor-texto-principal);
@@ -139,8 +143,7 @@ header {
 
 /* Estilo para o título */
 .title {
-    font-family: "Amatic SC", sans-serif;
-    font-size: 10rem; /* Aumentar o tamanho do título */
+    font-size: 4rem; /* Aumentar o tamanho do título */
     margin-bottom: 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
@@ -156,11 +159,12 @@ header {
 
 /* Estilo para a descrição */
 .description {
-    font-family: 'Roboto', sans-serif; /* Fonte para a descrição */
-    font-size: 1.5rem; /* Aumentar o tamanho da descrição */
+    font-family: "Farsan", cursive;
+    font-size: 2rem !important; /* Aumentar o tamanho da descrição */
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra do texto */
     line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    letter-spacing: 0.8px;
 }
 
 /* Estilo do botão de rolagem */
@@ -226,16 +230,17 @@ header {
 @media (max-width: 768px) {
     /* Ajusta o tamanho da fonte e margens para o título */
     .title {
-        font-size: 4rem; /* Reduz o título */
+        font-size: 3rem; /* Reduz o título */
     }
     
     .title-span {
-        font-size: 5rem; /* Reduz a fonte do título principal */
+        font-size: 3rem; /* Reduz a fonte do título principal */
+        display: block;
     }
 
     /* Ajusta o tamanho da fonte da descrição */
     .description {
-        font-size: 1.2rem; /* Tamanho menor para a descrição */
+        font-size: 1.3rem !important; /* Tamanho menor para a descrição */
         margin-bottom: 1rem; /* Menor espaçamento */
     }
 
@@ -253,6 +258,10 @@ header {
     /* Ajusta a seção de vídeo */
     .video-background {
         height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
+    }
+
+    .video-background .background-video {
+        transform: scale(1); /* Retorna ao tamanho original em telas menores */
     }
 
     /* Centraliza o menu em dispositivos menores */
