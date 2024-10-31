@@ -115,81 +115,85 @@
             </div>
         </section>
         <!-- Seção de SErviços -->
-        <section id="services" class="services-section" aria-labelledby="services-title">
+        <section class="services-section py-5" id="services">
             <div class="container">
-                <h2 id="services-title" class="section-title">Nossos Serviços</h2>
-                <p class="section-description">Transforme sua aparência com nossos serviços de alta qualidade.</p>
-                
-                <div class="row">
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Corte de Cabelo">
-                            <div class="card-body">
-                                <h3 class="service-title">Corte de Cabelo</h3>
-                                <p class="service-description">Um corte de cabelo que combina com seu estilo e personalidade.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
+                <header class="text-center bg-transparent mb-5">
+                    <h2 class="section-title">Nossos Serviços e Preços</h2>
+                    <p class="section-description text-muted">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
+                </header>
+        
+                <!-- Flexbox com 3 Cards de Altura Uniforme -->
+                <div class="row text-center d-flex align-items-stretch">
+        
+                    <!-- Card 1: Serviços Únicos -->
+                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
+                            <i class="fas fa-scissors icon-large"></i>
+                            <h3 class="category-title mb-4">Serviços Únicos</h3>
+                            <ul class="list-unstyled">
+                                <li>Corte - <span class="price-3d">R$30</span></li>
+                                <hr>
+                                <li>Pente Único - <span class="price-3d">R$25</span></li>
+                                <hr>
+                                <li>Barba Completa - <span class="price-3d">R$25</span></li>
+                                <hr>
+                                <li>Barba Simples - <span class="price-3d">R$15</span></li>
+                                <hr>
+                                <li>Sobrancelha - <span class="price-3d">R$10</span></li>
+                                <hr>
+                                <li>Pigmentação - <span class="price-3d">R$25</span></li>
+                            </ul>
                         </div>
                     </article>
         
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Barba Estilizada">
-                            <div class="card-body">
-                                <h3 class="service-title">Barba Estilizada</h3>
-                                <p class="service-description">Design de barba personalizado para um visual impressionante.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
+                    <!-- Card 2: Combos -->
+                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
+                            <i class="fas fa-gem icon-large"></i>
+                            <h3 class="category-title mb-4">Combos</h3>
+                            <ul class="list-unstyled">
+                                <li>Corte + Barba - <span class="price-3d">R$45</span></li>
+                                <hr>
+                                <li>Corte + Barba Simples - <span class="price-3d">R$40</span></li>
+                                <hr>
+                                <li>Corte Simples + Barba - <span class="price-3d">R$40</span></li>
+                                <hr>
+                                <li>Pente Único + Barba Única - <span class="price-3d">R$35</span></li>
+                                <hr>
+                                <li>Corte + Sobrancelha - <span class="price-3d">R$35</span></li>
+                                <hr>
+                                <li>Corte + Pigmentação - <span class="price-3d">R$45</span></li>
+                            </ul>
                         </div>
                     </article>
         
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Sobrancelhas">
-                            <div class="card-body">
-                                <h3 class="service-title">Sobrancelhas</h3>
-                                <p class="service-description">Ajuste de sobrancelhas para realçar sua expressão.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
+                    <!-- Card 3: Pacotes Mensais -->
+                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
+                            <i class="fas fa-calendar-alt icon-large"></i>
+                            <h3 class="category-title mb-4">Pacotes Mensais</h3>
+                            <ul class="list-unstyled">
+                                <li>4 Cortes - <span class="price-3d">R$100</span></li>
+                                <hr>
+                                <li>4 Cortes + Barba - <span class="price-3d">R$115</span></li>
+                                <hr>
+                                <li>4 Cortes + Sobrancelha - <span class="price-3d">R$140</span></li>
+                                <hr>
+                                <li>4 Cortes + Barba Simples - <span class="price-3d">R$120</span></li>
+                                <hr>
+                                <li>4 Cortes + Pigmentação - <span class="price-3d">R$135</span></li>
+                            </ul>
                         </div>
                     </article>
         
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Tratamentos Capilares">
-                            <div class="card-body">
-                                <h3 class="service-title">Tratamentos Capilares</h3>
-                                <p class="service-description">Tratamentos para manter seu cabelo saudável e radiante.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
-                        </div>
-                    </article>
-        
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Coloração">
-                            <div class="card-body">
-                                <h3 class="service-title">Coloração</h3>
-                                <p class="service-description">Realce sua aparência com uma coloração personalizada.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
-                        </div>
-                    </article>
-        
-                    <article class="col-md-4 mb-4">
-                        <div class="card service-item">
-                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Tratamento Facial">
-                            <div class="card-body">
-                                <h3 class="service-title">Tratamento Facial</h3>
-                                <p class="service-description">Cuidados especiais para revitalizar sua pele.</p>
-                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
-        
+          
+
+
+
+       
        
     </main>
 
