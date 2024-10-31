@@ -277,3 +277,352 @@ header {
         font-size: 0.9rem;
     }
 }
+
+
+
+:root {
+    /* Cores principais */
+    --cor-primaria: #EC4D37; /* Verde-água (pode ser a cor do botão) */
+    --bs-orange: #EC4D37; /* Amarelo ouro */
+    --cor-fundo: #1D1D1D; /* Cinza azulado escuro */
+    --cor-menu: #353535; /* Cinza escuro para o fundo do menu */
+    
+    /* Cores de texto */
+    --cor-texto-principal: #F1F1F1; /* Branco sujo */
+    --cor-texto-secundario: #bdc3c7; /* Cinza claro para textos secundários */
+    
+    /* Efeitos de interação */
+    --cor-hover: #2980b9; /* Azul mais claro para hover */
+    --cor-erro: #EC4D37; /* Vermelho para mensagens de erro */
+    --cor-sucesso: #EC4D37; /* Verde escuro para mensagens de sucesso */
+    
+    /* Cores adicionais */
+    --cor-cinza-fosco-1: #7f8c8d; /* Cinza médio */
+    --cor-cinza-fosco-2: #4d5656; /* Cinza escuro */
+    --cor-cinza-fosco-3: #3b3b3b; /* Cinza bem escuro */
+    --cor-gelo-1: #95a5a6; /* Cinza claro */
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+
+body {
+    padding-top: 0px; /* Ajuste para header fixo */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 87.5%; /* Base de 14px */
+}
+
+/* Compensação do scroll para a altura do cabeçalho */
+section {
+    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
+    }
+}
+
+/* MENU DE NAVEGAÇÃO NAV BAR */
+h1 {
+    color: var(--cor-texto-principal);
+}
+
+h2 {
+    color: var(--cor-texto-principal);
+}
+
+h3 {
+    color: var(--cor-texto-secundario);
+}
+
+/* Estilos para o Cabeçalho */
+header {
+    background-color: var(--cor-menu);
+}
+
+/* Estilos de Botões */
+.navbar-toggler {
+    background-color: var(--cor-sucesso);
+}
+
+.btn-custom {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    color: var(--cor-texto-principal);
+    padding: 12px 20px; /* Ajuste o preenchimento do botão */
+    border-radius: 50px; /* Botão arredondado */
+    border: 2px solid var(--cor-texto-principal);
+    font-weight: 600; /* Estilo de fonte mais forte */
+    font-size: 1.1rem; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.btn-custom:hover {
+    background-color: var(--cor-sucesso);
+    color: #000000;
+    transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
+}
+
+.btn-custom i {
+    font-size: 1.3rem; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.nav-link:hover {
+    color: var(--cor-sucesso) !important;
+}
+
+/****************************** Estilização da Seção Home ******************************/
+.home-section {
+    position: relative;
+    height: 100vh; /* Altura da seção */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centraliza o texto */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Usa a largura da tela para ajustar */
+    height: 100vh; /* Usa a altura da tela para cobrir completamente */
+    overflow: hidden;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.background-video {
+    width: 100%; /* A largura se ajusta ao container */
+    height: 100%; /* A altura também se ajusta */
+    object-fit: cover; /* Cobre toda a área mantendo proporção */
+}
+
+.video-background .background-video {
+    transition: transform 0.3s ease; /* Transição suave ao ajustar */
+}
+
+/* Estilos do conteúdo */
+.content {
+    color: var(--cor-texto-principal);
+    position: relative;
+    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para o título */
+.title {
+    font-size: 4rem; /* Aumentar o tamanho do título */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+}
+
+.title-span{
+    color: var(--cor-primaria); 
+}
+
+/* Destaque no título */
+.highlight {
+    color: var(--cor-primaria); /* Cor para o destaque */
+}
+
+/* Estilo para a descrição */
+.description {
+    font-family: "Farsan", cursive;
+    font-size: 2rem !important; /* Aumentar o tamanho da descrição */
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    letter-spacing: 0.8px;
+}
+
+/* Estilo do botão de rolagem */
+.scroll-container {
+    display: flex; /* Para alinhar o botão */
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    position: absolute; /* Posiciona o botão dentro da seção */
+    bottom: 20px; /* Distância do rodapé */
+    left: 50%; /* Centraliza o botão */
+    transform: translateX(-50%); /* Corrige a posição para o centro */
+}
+
+.scroll-button {
+    display: inline-flex; /* Para alinhar o texto e a bolinha */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 10px; /* Ajusta o preenchimento do botão */
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid var(--cor-primaria); /* Borda com a cor primária */
+    border-radius: 50px; /* Borda redonda */
+    color: var(--cor-primaria); /* Cor do texto */
+    position: relative; /* Para posicionamento da bolinha */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    overflow: hidden; /* Para esconder qualquer conteúdo que ultrapasse */
+}
+
+/* Efeito de hover no botão */
+.scroll-button:hover {
+    background-color: rgba(52, 152, 219, 0.1); /* Fundo leve ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o botão */
+}
+
+/* Estilo para a bolinha */
+.dot {
+    width: 12px; /* Tamanho da bolinha */
+    height: 12px; /* Tamanho da bolinha */
+    background-color: var(--cor-primaria); /* Cor da bolinha */
+    border-radius: 50%; /* Faz a bolinha ser redonda */
+    margin-right: 8px; /* Espaçamento entre a bolinha e o texto */
+    animation: bounce 1s infinite; /* Animação de pulso */
+}
+
+/* Animação de pulso da bolinha */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* posição inicial */
+    }
+    40% {
+        transform: translateY(-10px); /* sobe */
+    }
+    60% {
+        transform: translateY(-5px); /* desce um pouco */
+    }
+}
+
+/* Estilo do texto de rolagem */
+.scroll-text {
+    font-size: 1rem; /* Tamanho do texto */
+    font-weight: 600; /* Peso do texto */
+}
+
+/* Responsividade - Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    /* Ajusta o tamanho da fonte e margens para o título */
+    .title {
+        font-size: 3rem; /* Reduz o título */
+    }
+    
+    .title-span {
+        font-size: 3rem; /* Reduz a fonte do título principal */
+        display: block;
+    }
+
+    /* Ajusta o tamanho da fonte da descrição */
+    .description {
+        font-size: 1.3rem !important; /* Tamanho menor para a descrição */
+        margin-bottom: 1rem; /* Menor espaçamento */
+    }
+
+    /* Ajusta o botão customizado */
+    .btn-custom {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+    
+    /* Ajusta o scroll container */
+    .scroll-container {
+        bottom: 130px;
+    }
+
+    /* Ajusta a seção de vídeo */
+    .video-background {
+        height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
+    }
+
+    .video-background .background-video {
+        transform: scale(1); /* Retorna ao tamanho original em telas menores */
+    }
+
+    /* Centraliza o menu em dispositivos menores */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ajusta o botão de rolagem para tela menor */
+    .scroll-button {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/****************************** Estilização da Seção de Serviços ******************************/
+.services-section {
+    background-color: var(--cor-fundo);
+    padding: 60px 0; /* Adiciona espaçamento */
+    color: var(--cor-texto-principal);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: var(--cor-texto-secundario);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsivo */
+    gap: 30px; /* Espaçamento entre os itens */
+    max-width: 1200px; /* Largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid */
+}
+
+.service-item {
+    background-color: var(--cor-menu);
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    transition: transform 0.3s; /* Efeito de transição */
+    display: flex; /* Flexbox para garantir alinhamento */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    justify-content: space-between; /* Distribui espaço entre os filhos */
+    height: 100%; /* Faz os cards ocuparem toda a altura disponível */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Faz a descrição ocupar espaço extra */
+    color: #ec4c3786;
+}
+
+.btn-service {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-principal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-service:hover {
+    background-color: var(--cor-hover);
+}

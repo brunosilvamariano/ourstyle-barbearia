@@ -73,46 +73,126 @@
     </header>
 
     <main>
-        <!-- Seção Home -->
-        <section id="home" class="home-section">
-            <div class="video-background">
-                <video autoplay muted loop class="background-video">
-                    <source src="assets/images/banner-home.mp4" type="video/mp4"> <!-- Substitua pelo seu vídeo -->
+       <!-- Seção Home -->
+        <section id="home" class="home-section" aria-labelledby="home-title">
+            <!-- Background de vídeo -->
+            <div class="video-background" aria-hidden="true">
+                <video autoplay muted loop class="background-video" aria-label="Background video de introdução">
+                    <source src="assets/images/banner-home.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos HTML5.
                 </video>
             </div>
-            
+
+            <!-- Conteúdo principal -->
             <div class="content">
-                <h1 class="title fw-semibold">
-                <span class="title-span">Our Style:</span> o seu estilo <br> impecável é aqui
+                <h1 id="home-title" class="title fw-semibold">
+                    <span class="title-span">Our Style:</span> o seu estilo <br> impecável é aqui
                     <span class="highlight"> <span id="animated-text"></span></span>
                 </h1>
-                <div class="underline"></div> <!-- Linha abaixo do título -->
+                
+                <div role="separator" class="underline"></div> <!-- Linha abaixo do título -->
+
                 <p class="description fw-bold fs-1">
                     Transformando sua aparência e renovando sua confiança.
                 </p>
-                <!-- Botão de agendamento à direita -->
+
+                <!-- Botão de agendamento com link de contato -->
                 <div class="d-flex justify-content-center">
-                    <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." class="btn btn-custom" aria-label="Agendar um horário">
-                        <i class="bi bi-whatsapp"></i> <!-- Ícone de relógio da Font Awesome -->
+                    <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
+                    class="btn btn-custom" 
+                    aria-label="Agendar um horário pelo WhatsApp no número (47) 99639-8433">
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i> <!-- Ícone do WhatsApp -->
                         (47) 99639-8433
                     </a>
                 </div>
             </div>
-            
-            
+
+            <!-- Botão de rolagem -->
             <div class="scroll-container">
-                <a href="#services" class="scroll-button">
-                    <span class="dot"></span>
+                <a href="#services" class="scroll-button" aria-label="Role para ver nossos serviços">
+                    <span class="dot" aria-hidden="true"></span>
                 </a>
             </div>
-            
         </section>
-
-        <section id="services">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque nulla, quos, voluptate illo eius unde ipsam magni cupiditate cum sunt repellendus veritatis assumenda dolore ipsa quisquam. Sapiente voluptate aperiam ipsa nihil a dolorum vel delectus quia perspiciatis, odio harum corrupti error exercitationem, tempora corporis! Ipsam officiis iste quasi harum voluptatum velit ea, libero, nesciunt perferendis quam blanditiis pariatur. Soluta architecto commodi non aspernatur similique quae eos odit, itaque obcaecati tempora quasi vel suscipit quisquam libero repudiandae enim quo unde illum nulla dolorem nemo, inventore quibusdam. Porro, velit. Cupiditate, sapiente obcaecati natus nisi ex fugit eos quisquam vero molestiae! Libero quae eius atque quasi error nesciunt recusandae id eos pariatur aliquam esse laboriosam eveniet quidem earum eligendi omnis ipsum, veritatis modi magnam sit facilis obcaecati. Dignissimos quas porro vitae, id quae laboriosam voluptate tenetur vel odio illum quis hic eligendi totam, impedit eos minus aliquid praesentium earum eaque doloribus ipsum possimus? Minus illo culpa impedit iure deleniti sapiente pariatur quibusdam harum inventore aperiam totam, vitae ducimus tenetur mollitia dolorem blanditiis voluptate tempora voluptatum a reprehenderit. Laborum alias deserunt fugit, accusamus quasi nihil, ex soluta velit voluptatibus magnam praesentium eum aliquid perspiciatis perferendis, repellat unde explicabo dolore quisquam esse excepturi earum dolores vero aperiam. Placeat voluptates tempore porro, aspernatur repellendus molestias hic consequuntur, vel perferendis alias voluptate iusto ullam. Voluptatem rem, sequi veritatis vitae dolorum odio, quibusdam ducimus ad repellat asperiores quae reiciendis, ipsa minus laboriosam expedita modi voluptas. A quas, voluptatem eum magnam sapiente deleniti veniam nesciunt consequatur debitis, iusto fugiat perspiciatis, eius veritatis aut quod tempore quidem. Eaque deleniti sapiente, magni doloribus fugit porro vitae aspernatur consectetur nihil tenetur quis dolor ipsa culpa nisi quidem quam tempore earum sit nostrum ipsum, provident doloremque hic? Non quas eum iusto? Minima saepe nulla nemo magnam consequatur reprehenderit debitis. Repudiandae quod corporis, molestias laboriosam deserunt sequi delectus modi aliquid, quis aperiam fugiat eligendi minima veniam minus quas dignissimos. Praesentium dolorem quasi ducimus molestias eaque expedita eos ratione saepe repudiandae voluptatibus quas minima amet, porro animi non numquam. Natus ex ipsum, fugit modi sequi fuga corporis facilis magnam quam. Similique aliquam tempora eveniet voluptatem expedita, necessitatibus distinctio repellat maxime ipsum consequatur aperiam! Temporibus quos molestias, dolores totam voluptas sapiente est error quam facere quidem nam explicabo quibusdam, quis sint! Iure deserunt, perferendis similique debitis enim totam deleniti cupiditate necessitatibus porro accusamus dolore eveniet magnam, illum provident fuga quaerat laboriosam beatae odit nobis odio repellendus quia reprehenderit ipsam a? Error fuga consequuntur odit voluptatum ab quidem sint eveniet molestias eos, sapiente dolore omnis dicta quas quis voluptates quam tenetur dolores fugit qui. Vitae fugit ipsa cum pariatur quasi quaerat aspernatur iusto numquam earum deleniti sunt, inventore libero ab autem aperiam voluptatum voluptate. Placeat optio dignissimos inventore illo earum ipsum? Provident temporibus culpa, libero, eius nulla, exercitationem doloribus a esse harum necessitatibus eveniet. Fuga, facere molestiae in nostrum itaque quos ipsum dolorum. Vero praesentium nisi sequi necessitatibus nam qui aliquid consequatur rerum molestias. Nihil, fugiat culpa. Odit culpa ratione reprehenderit. Corporis, culpa aperiam. Delectus provident iusto laborum vel sit voluptates accusantium officia. Nulla cumque enim sed eligendi magnam id iure doloremque quis, iusto deleniti fuga libero, distinctio aliquam magni soluta totam illum debitis dignissimos fugit ratione facere. Provident, inventore doloribus fugiat harum atque soluta magni dicta corrupti ad similique dolores quia fugit porro, animi facilis quis aut. Id dolorem sequi vel tempore laborum. Non a recusandae aut accusamus cum at aliquid quam, ipsam, iure voluptas, beatae aspernatur ex. Consequatur dolorum libero praesentium. Quia cupiditate quaerat molestias illo voluptate consectetur, eos aut magnam quasi error ratione a quam debitis quibusdam. Assumenda expedita eum mollitia rem pariatur numquam saepe sed error deserunt esse ipsam beatae repellendus maiores aperiam consequuntur, quisquam doloribus veritatis, perspiciatis, ducimus tempora? Itaque quos rem saepe odit placeat, nam aspernatur laboriosam, voluptatibus commodi eum possimus? Modi vel quaerat eligendi fugit dolorem? Doloremque reprehenderit voluptates soluta odit ipsum dolor reiciendis fuga? Expedita minima fugiat voluptates. Officiis possimus, perspiciatis consectetur tempora sequi aspernatur, eligendi, veniam dicta cum eum accusamus laboriosam nulla nam odit deserunt architecto labore rem porro aperiam ipsa incidunt veritatis animi dolorum recusandae? At voluptas ab esse facere, tenetur voluptatibus placeat! Voluptatem atque error neque deserunt nesciunt quae enim quas ab sunt quod, magnam sed deleniti sit exercitationem asperiores placeat temporibus! Assumenda consequuntur laboriosam quibusdam quidem voluptatibus recusandae commodi fuga magni maiores ipsum vitae est quae, iusto unde voluptatum atque accusantium error, voluptate aperiam dolorem. Explicabo ab est dolore. Beatae, placeat suscipit. Corporis quam nobis, temporibus id optio nulla accusamus voluptatem ipsam necessitatibus ipsum laborum consequuntur, obcaecati expedita ullam unde. Maxime aut eaque nobis magni debitis in, possimus consectetur perferendis libero officia, dolor praesentium quis veritatis optio harum incidunt nesciunt sint voluptas exercitationem accusamus accusantium delectus! Veritatis perspiciatis laudantium at, deserunt qui et animi quos, aperiam ducimus nisi id nulla? In voluptates quas aspernatur.
+        <!-- Seção de SErviços -->
+        <section id="services" class="services-section" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">Nossos Serviços</h2>
+                <p class="section-description">Transforme sua aparência com nossos serviços de alta qualidade.</p>
+                
+                <div class="row">
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Corte de Cabelo">
+                            <div class="card-body">
+                                <h3 class="service-title">Corte de Cabelo</h3>
+                                <p class="service-description">Um corte de cabelo que combina com seu estilo e personalidade.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Barba Estilizada">
+                            <div class="card-body">
+                                <h3 class="service-title">Barba Estilizada</h3>
+                                <p class="service-description">Design de barba personalizado para um visual impressionante.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Sobrancelhas">
+                            <div class="card-body">
+                                <h3 class="service-title">Sobrancelhas</h3>
+                                <p class="service-description">Ajuste de sobrancelhas para realçar sua expressão.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Tratamentos Capilares">
+                            <div class="card-body">
+                                <h3 class="service-title">Tratamentos Capilares</h3>
+                                <p class="service-description">Tratamentos para manter seu cabelo saudável e radiante.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Coloração">
+                            <div class="card-body">
+                                <h3 class="service-title">Coloração</h3>
+                                <p class="service-description">Realce sua aparência com uma coloração personalizada.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="col-md-4 mb-4">
+                        <div class="card service-item">
+                            <img src="assets/images/banner-1.jpg" class="card-img-top" alt="Tratamento Facial">
+                            <div class="card-body">
+                                <h3 class="service-title">Tratamento Facial</h3>
+                                <p class="service-description">Cuidados especiais para revitalizar sua pele.</p>
+                                <a href="#agendamento" class="btn btn-service">Agendar Agora</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
+        
+       
     </main>
+
 
     <script>
         function scrollToTop() {

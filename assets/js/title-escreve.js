@@ -1,4 +1,4 @@
-const texts = ["", "", ""]; // Texto a ser escrito
+/**const texts = ["", "", ""]; // Texto a ser escrito
 let index = 0; // Índice do texto atual
 let currentText = ""; // Texto atual
 let isDeleting = false; // Se está apagando ou escrevendo
@@ -34,4 +34,6 @@ function type() {
 }
 
 // Inicia a animação
-type();
+type();**/
+
+
