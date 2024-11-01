@@ -45,6 +45,11 @@ section {
     scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
 }
 
+header {
+    background-color: var(--cor-menu);
+}
+
+
 @media (max-width: 768px) {
     section {
         scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
@@ -64,10 +69,6 @@ h3 {
     color: var(--cor-texto-secundario);
 }
 
-/* Estilos para o Cabeçalho */
-header {
-    background-color: var(--cor-menu);
-}
 
 /* Estilos de Botões */
 .navbar-toggler {
@@ -278,77 +279,6 @@ header {
     }
 }
 
-
-
-:root {
-    /* Cores principais */
-    --cor-primaria: #EC4D37; /* Verde-água (pode ser a cor do botão) */
-    --bs-orange: #EC4D37; /* Amarelo ouro */
-    --cor-fundo: #1D1D1D; /* Cinza azulado escuro */
-    --cor-menu: #353535; /* Cinza escuro para o fundo do menu */
-    
-    /* Cores de texto */
-    --cor-texto-principal: #F1F1F1; /* Branco sujo */
-    --cor-texto-secundario: #bdc3c7; /* Cinza claro para textos secundários */
-    
-    /* Efeitos de interação */
-    --cor-hover: #2980b9; /* Azul mais claro para hover */
-    --cor-erro: #EC4D37; /* Vermelho para mensagens de erro */
-    --cor-sucesso: #EC4D37; /* Verde escuro para mensagens de sucesso */
-    
-    /* Cores adicionais */
-    --cor-cinza-fosco-1: #7f8c8d; /* Cinza médio */
-    --cor-cinza-fosco-2: #4d5656; /* Cinza escuro */
-    --cor-cinza-fosco-3: #3b3b3b; /* Cinza bem escuro */
-    --cor-gelo-1: #95a5a6; /* Cinza claro */
-}
-
-* {
-    text-decoration: none;
-    list-style-type: none;
-    border: none;
-}
-
-body {
-    padding-top: 0px; /* Ajuste para header fixo */
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto-principal);
-    font-family: "Poppins", sans-serif;
-}
-
-html {
-    overflow-x: hidden;
-    font-size: 87.5%; /* Base de 14px */
-}
-
-/* Compensação do scroll para a altura do cabeçalho */
-section {
-    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
-}
-
-@media (max-width: 768px) {
-    section {
-        scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
-    }
-}
-
-/* MENU DE NAVEGAÇÃO NAV BAR */
-h1 {
-    color: var(--cor-texto-principal);
-}
-
-h2 {
-    color: var(--cor-texto-principal);
-}
-
-h3 {
-    color: var(--cor-texto-secundario);
-}
-
-/* Estilos para o Cabeçalho */
-header {
-    background-color: var(--cor-menu);
-}
 
 /* Estilos de Botões */
 .navbar-toggler {
@@ -628,3 +558,51 @@ hr {
     margin: 10px 0;
 }
 
+/****************************** Estilização da Seção de Sobre ******************************/
+.about-section {
+    background-color: var(--cor-fundo);
+    padding: 60px 0;
+}
+
+.about-image-wrapper {
+    perspective: 1000px; /* Adiciona perspectiva */
+    display: inline-block;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 350px;
+    border: 5px solid var(--cor-primaria);
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.about-image:hover {
+    transform: rotateY(15deg) rotateX(15deg) scale(1.1); /* Efeito de rotação 3D */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+}
+
+.about-feature {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--cor-texto-principal);
+    display: flex;
+    align-items: center;
+}
+
+.about-feature .icon {
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    margin-right: 8px;
+}
