@@ -560,49 +560,51 @@ hr {
 
 /****************************** Estilização da Seção de Sobre ******************************/
 .about-section {
-    background-color: var(--cor-fundo);
-    padding: 60px 0;
+    position: relative;
+    background: url('../images/banner-bg.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
-.about-image-wrapper {
-    perspective: 1000px; /* Adiciona perspectiva */
-    display: inline-block;
-}
 
-.about-image {
-    width: 100%;
-    max-width: 350px;
-    border: 5px solid var(--cor-primaria);
-    transition: transform 0.5s ease;
-    transform-style: preserve-3d;
-}
-
-.about-image:hover {
-    transform: rotateY(15deg) rotateX(15deg) scale(1.1); /* Efeito de rotação 3D */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
-}
 
 .section-title {
     font-size: 2.5rem;
     color: var(--cor-primaria);
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .section-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--cor-texto-secundario);
-    line-height: 1.6;
+    z-index: 2;
 }
 
-.about-feature {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+.about-list {
+    font-size: 1rem;
     color: var(--cor-texto-principal);
-    display: flex;
-    align-items: center;
+    z-index: 2;
 }
 
-.about-feature .icon {
+.icon {
+    color: var(--cor-primaria);
+    margin-right: 10px;
+}
+
+.info-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--cor-texto-principal);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-card h4 {
+    color: var(--cor-primaria);
     font-size: 1.5rem;
+}
+
+.info-card i {
     color: var(--cor-primaria);
     margin-right: 8px;
 }
