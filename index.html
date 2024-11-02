@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Cabeçalho fixo com barra de navegação -->
-    <header class="navbar navbar-expand-lg fixed-top" role="banner" aria-label="Cabeçalho principal">
+    <header class="navbar navbar-expand-lg fixed-top aos-ignore" role="banner" aria-label="Cabeçalho principal">
         <div class="container">
             <!-- Logo da Barbearia -->
             <a class="navbar-brand" href="#home" aria-label="Página inicial - Barbearia Ourstyle">
@@ -75,7 +75,7 @@
                 </video>
             </div>
             <!-- Conteúdo principal -->
-            <div class="content">
+            <div class="content" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="400">
                 <!-- Título principal da seção -->
                 <h1 id="home-title" class="title fw-semibold">
                     <span class="title-span">Our Style:</span> o seu estilo <br> impecável é aqui
@@ -109,13 +109,13 @@
             <div class="container">
                 <!-- Cabeçalho da Seção -->
                 <header class="text-center bg-transparent mb-5">
-                    <h2 id="services-title" class="section-title fs-2">Nossos Preços e Planos</h2>
-                    <p class="section-description text-muted">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
+                    <h2 id="services-title" class="section-title fs-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Nossos Preços e Planos</h2>
+                    <p class="section-description text-muted" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
                 </header>
                 <!-- Flexbox com 3 Cards de Altura Uniforme -->
                 <div class="row text-center d-flex align-items-stretch">
                     <!-- Card 1: Serviços Únicos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="unique-services-title">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="unique-services-title" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
                             <i class="fas fa-scissors icon-large" aria-hidden="true"></i>
                             <h3 id="unique-services-title" class="category-title mb-4">Serviços Únicos</h3>
@@ -135,7 +135,7 @@
                         </div>
                     </article>
                     <!-- Card 2: Combos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="combo-services-title">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="combo-services-title" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
                             <i class="fas fa-gem icon-large" aria-hidden="true"></i>
                             <h3 id="combo-services-title" class="category-title mb-4">Combos</h3>
@@ -155,7 +155,7 @@
                         </div>
                     </article>
                     <!-- Card 3: Pacotes Mensais -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="monthly-packages-title" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
                             <i class="fas fa-calendar-alt icon-large" aria-hidden="true"></i>
                             <h3 id="monthly-packages-title" class="category-title mb-4">Pacotes Mensais</h3>
@@ -180,7 +180,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Coluna Esquerda: Descrição e Lista de Serviços -->
-                    <div class="col-md-8 mb-4 mb-md-0">
+                    <div class="col-md-8 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
                         <h2 id="about-title" class="section-title mb-4 fs-2">O Lugar para o seu melhor estilo</h2>
                         <p class="section-description mb-4">
                             Oferecemos serviços de barbearia com excelência e cuidado. Nossa equipe especializada está pronta para proporcionar uma experiência exclusiva.
@@ -205,7 +205,7 @@
                         </div>
                     </div>
                     <!-- Coluna Direita: Card de Informações Práticas -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                         <div class="info-card p-4 rounded text-center shadow-lg" aria-labelledby="location-title working-hours-title">
                             <!-- Localização -->
                             <h3 id="location-title" class="fs-5"><i class="fas fa-map-marker-alt fs-5" aria-hidden="true"></i> Localização</h3>
@@ -496,7 +496,10 @@
     <!-- Scripts Animações AOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        // Inicializa AOS
+        AOS.init({
+            disableMutationObserver: true // Evita interferências
+        });
     </script>
     <!-- Scripts Rolagem suave -->
     <script>

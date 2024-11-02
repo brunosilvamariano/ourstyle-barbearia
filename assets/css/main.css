@@ -22,6 +22,11 @@
     --cor-gelo-1: #95a5a6; /* Cinza claro */
 }
 
+.aos-ignore {
+    pointer-events: auto; /* Garante que o menu toggle funcione normalmente */
+    position: relative; /* Previne deslocamentos indesejados */
+}
+
 * {
     text-decoration: none;
     list-style-type: none;
