@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ourstyle Barbearia</title>
-
     <!-- Link para o CSS do Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap/dist/css/bootstrap.min.css">
-    
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link para Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-
+    <!--Script AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Link para seu CSS personalizado, se houver -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    
     <!-- Cabeçalho fixo com barra de navegação -->
-    <header class="navbar navbar-expand-lg fixed-top">
+    <header class="navbar navbar-expand-lg fixed-top" role="banner" aria-label="Cabeçalho principal">
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#home" aria-label="Página inicial">
+            <!-- Logo da Barbearia -->
+            <a class="navbar-brand" href="#home" aria-label="Página inicial - Barbearia Ourstyle">
                 <img src="assets/images/logo-barber.svg" alt="Logo da Barbearia Ourstyle" class="logo">
             </a>
-
             <!-- Botão do menu mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegação principal">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Menu de navegação principal -->
-            <nav class="collapse navbar-collapse" id="navbarNav" aria-label="Navegação principal">
+            <nav class="collapse navbar-collapse" id="navbarNav" role="navigation" aria-label="Navegação principal">
                 <ul class="navbar-nav mx-auto"> <!-- Centraliza o menu -->
                     <li class="nav-item">
-                        <a class="nav-link me-2 fw-medium fs-6" style="color: #EC4D37;" href="#home"><span>Início</span></a>
+                        <a class="nav-link me-2 fw-medium fs-6" style="color: #EC4D37;" href="#home">
+                            <span>Início</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-2 fw-medium fs-6" style="color: #fff" href="#services">Preços e Planos</a>
@@ -60,39 +55,38 @@
                 </ul>
                 <!-- Botão de agendamento à direita -->
                 <div class="d-flex justify-content-center">
-                    <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." class="btn btn-custom" aria-label="Agendar um horário">
-                        <i class="fas fa-clock me-2"></i> <!-- Ícone de relógio da Font Awesome -->
-                        Agendar agora
+                    <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
+                       class="btn btn-custom" aria-label="Agendar um horário pelo WhatsApp">
+                        <i class="fas fa-clock me-2" aria-hidden="true"></i> <!-- Ícone de relógio da Font Awesome -->
+                        <span>Agendar agora</span>
                     </a>
                 </div>
             </nav>
         </div>
     </header>
-
     <main>
        <!-- Seção Home -->
         <section id="home" class="home-section" aria-labelledby="home-title">
             <!-- Background de vídeo -->
             <div class="video-background" aria-hidden="true">
-                <video autoplay muted loop class="background-video" aria-label="Background video de introdução">
+                <video autoplay muted loop class="background-video" aria-label="Vídeo de fundo da seção Home">
                     <source src="assets/images/banner-home.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos HTML5.
                 </video>
             </div>
-
             <!-- Conteúdo principal -->
-            <div class="content">
+            <div class="content" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="400">
+                <!-- Título principal da seção -->
                 <h1 id="home-title" class="title fw-semibold">
                     <span class="title-span">Our Style:</span> o seu estilo <br> impecável é aqui
                     <span class="highlight"> <span id="animated-text"></span></span>
                 </h1>
-                
-                <div role="separator" class="underline"></div> <!-- Linha abaixo do título -->
-
+                <!-- Linha abaixo do título -->
+                <hr class="underline" aria-hidden="true" role="presentation"> 
+                <!-- Descrição do serviço -->
                 <p class="description fw-bold fs-1">
                     Transformando sua aparência e renovando sua confiança.
                 </p>
-
                 <!-- Botão de agendamento com link de contato -->
                 <div class="d-flex justify-content-center">
                     <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
@@ -103,7 +97,6 @@
                     </a>
                 </div>
             </div>
-
             <!-- Botão de rolagem -->
             <div class="scroll-container">
                 <a href="#services" class="scroll-button" aria-label="Role para ver nossos serviços">
@@ -112,77 +105,73 @@
             </div>
         </section>
         <!-- Seção de SErviços -->
-        <section class="services-section py-5" id="services">
+        <section class="services-section py-5" id="services" aria-labelledby="services-title">
             <div class="container">
+                <!-- Cabeçalho da Seção -->
                 <header class="text-center bg-transparent mb-5">
-                    <h2 class="section-title fs-2">Nossos Preços e Planos</h2>
+                    <h2 id="services-title" class="section-title fs-2">Nossos Preços e Planos</h2>
                     <p class="section-description text-muted">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
                 </header>
-        
                 <!-- Flexbox com 3 Cards de Altura Uniforme -->
                 <div class="row text-center d-flex align-items-stretch">
-        
                     <!-- Card 1: Serviços Únicos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="unique-services-title">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-scissors icon-large"></i>
-                            <h3 class="category-title mb-4">Serviços Únicos</h3>
-                            <ul class="list-unstyled">
+                            <i class="fas fa-scissors icon-large" aria-hidden="true"></i>
+                            <h3 id="unique-services-title" class="category-title mb-4">Serviços Únicos</h3>
+                            <ul class="list-unstyled" aria-label="Lista de serviços únicos e preços">
                                 <li>Corte - <span class="price-3d">R$30</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Pente Único - <span class="price-3d">R$25</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Barba Completa - <span class="price-3d">R$25</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Barba Simples - <span class="price-3d">R$15</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Sobrancelha - <span class="price-3d">R$10</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Pigmentação - <span class="price-3d">R$25</span></li>
                             </ul>
                         </div>
                     </article>
-        
                     <!-- Card 2: Combos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="combo-services-title">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-gem icon-large"></i>
-                            <h3 class="category-title mb-4">Combos</h3>
-                            <ul class="list-unstyled">
+                            <i class="fas fa-gem icon-large" aria-hidden="true"></i>
+                            <h3 id="combo-services-title" class="category-title mb-4">Combos</h3>
+                            <ul class="list-unstyled" aria-label="Lista de combos e preços">
                                 <li>Corte + Barba - <span class="price-3d">R$45</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Corte + Barba Simples - <span class="price-3d">R$40</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Corte Simples + Barba - <span class="price-3d">R$40</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Pente Único + Barba Única - <span class="price-3d">R$35</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Corte + Sobrancelha - <span class="price-3d">R$35</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>Corte + Pigmentação - <span class="price-3d">R$45</span></li>
                             </ul>
                         </div>
                     </article>
-        
                     <!-- Card 3: Pacotes Mensais -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="monthly-packages-title">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-calendar-alt icon-large"></i>
-                            <h3 class="category-title mb-4">Pacotes Mensais</h3>
-                            <ul class="list-unstyled">
+                            <i class="fas fa-calendar-alt icon-large" aria-hidden="true"></i>
+                            <h3 id="monthly-packages-title" class="category-title mb-4">Pacotes Mensais</h3>
+                            <ul class="list-unstyled" aria-label="Lista de pacotes mensais e preços">
                                 <li>4 Cortes - <span class="price-3d">R$100</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>4 Cortes + Barba - <span class="price-3d">R$115</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>4 Cortes + Sobrancelha - <span class="price-3d">R$140</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>4 Cortes + Barba Simples - <span class="price-3d">R$120</span></li>
-                                <hr>
+                                <hr aria-hidden="true">
                                 <li>4 Cortes + Pigmentação - <span class="price-3d">R$135</span></li>
                             </ul>
                         </div>
                     </article>
-        
                 </div>
             </div>
         </section>
@@ -500,16 +489,13 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
-        
-        
-       
     </main>
-
-
+    <!-- Scripts Animações AOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Scripts Rolagem suave -->
     <script>
         function scrollToTop() {
             window.scrollTo({
@@ -522,7 +508,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Para jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Para Popper.js -->
     <script src="assets/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- JS do Bootstrap -->
-    
     <!-- Link para seu JavaScript personalizado, se houver -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/title-escreve.js"></script>
