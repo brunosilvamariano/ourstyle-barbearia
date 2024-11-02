@@ -1,76 +1,60 @@
-
 :root {
     /* Cores principais */
     --cor-primaria: #EC4D37; /* Verde-água (pode ser a cor do botão) */
     --bs-orange: #EC4D37; /* Amarelo ouro */
     --cor-fundo: #1D1D1D; /* Cinza azulado escuro */
-    --cor-menu: #353535; /* Cinza escuro para o fundo do menu */
-    
+    --cor-menu: #353535; /* Cinza escuro para o fundo do menu */  
     /* Cores de texto */
     --cor-texto-principal: #F1F1F1; /* Branco sujo */
-    --cor-texto-secundario: #bdc3c7; /* Cinza claro para textos secundários */
-    
+    --cor-texto-secundario: #bdc3c7; /* Cinza claro para textos secundários */   
     /* Efeitos de interação */
     --cor-hover: #2980b9; /* Azul mais claro para hover */
     --cor-erro: #EC4D37; /* Vermelho para mensagens de erro */
     --cor-sucesso: #EC4D37; /* Verde escuro para mensagens de sucesso */
-    
     /* Cores adicionais */
     --cor-cinza-fosco-1: #7f8c8d; /* Cinza médio */
     --cor-cinza-fosco-2: #4d5656; /* Cinza escuro */
     --cor-cinza-fosco-3: #3b3b3b; /* Cinza bem escuro */
     --cor-gelo-1: #95a5a6; /* Cinza claro */
 }
-
-
-
 * {
     text-decoration: none;
     list-style-type: none;
     border: none;
 }
-
 body {
     padding-top: 0px; /* Ajuste para header fixo */
     background-color: var(--cor-fundo);
     color: var(--cor-texto-principal);
     font-family: "Poppins", sans-serif;
 }
-
 html {
     overflow-x: hidden;
     font-size: 87.5%; /* Base de 14px */
 }
-
 /* Compensação do scroll para a altura do cabeçalho */
 section {
     scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
 }
-
 header {
     background-color: var(--cor-menu);
 }
-
 
 @media (max-width: 768px) {
     section {
         scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
     }
 }
-
 /* MENU DE NAVEGAÇÃO NAV BAR */
 h1 {
     color: var(--cor-texto-principal);
 }
-
 h2 {
     color: var(--cor-texto-principal);
 }
-
 h3 {
     color: var(--cor-texto-secundario);
 }
-
 .navbar {
     z-index: 1000; /* ou um valor alto para garantir que fique acima de outros elementos */
 }
@@ -78,7 +62,6 @@ h3 {
 .navbar-toggler {
     background-color: var(--cor-sucesso);
 }
-
 .btn-custom {
     display: flex;
     align-items: center; /* Centraliza verticalmente o ícone e o texto */
@@ -91,22 +74,18 @@ h3 {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
     text-decoration: none; /* Remove sublinhado */
 }
-
 .btn-custom:hover {
     background-color: var(--cor-sucesso);
     color: #000000;
     transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
 }
-
 .btn-custom i {
     font-size: 1.3rem; /* Tamanho do ícone */
     margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
-
 .nav-link:hover {
     color: var(--cor-sucesso) !important;
 }
-
 /* Seção Home */
 .home-section {
     position: relative;
@@ -117,7 +96,6 @@ h3 {
     justify-content: center;
     text-align: center; /* Centraliza o texto */
 }
-
 .video-background {
     position: absolute;
     top: 0;
@@ -127,17 +105,14 @@ h3 {
     overflow: hidden;
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
-
 .background-video {
     width: 100%; /* A largura se ajusta ao container */
     height: 100%; /* A altura também se ajusta */
     object-fit: cover; /* Cobre toda a área mantendo proporção */
 }
-
 .video-background .background-video {
     transition: transform 0.3s ease; /* Transição suave ao ajustar */
 }
-
 /* Estilos do conteúdo */
 .content {
     color: var(--cor-texto-principal);
@@ -145,23 +120,19 @@ h3 {
     max-width: 800px; /* Define uma largura máxima para o conteúdo */
     margin: 0 auto; /* Centraliza horizontalmente */
 }
-
 /* Estilo para o título */
 .title {
     font-size: 4rem; /* Aumentar o tamanho do título */
     margin-bottom: 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
-
 .title-span{
     color: var(--cor-primaria); 
 }
-
 /* Destaque no título */
 .highlight {
     color: var(--cor-primaria); /* Cor para o destaque */
 }
-
 /* Estilo para a descrição */
 .description {
     font-family: "Farsan", cursive;
@@ -171,7 +142,6 @@ h3 {
     line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
     letter-spacing: 0.8px;
 }
-
 /* Estilo do botão de rolagem */
 .scroll-container {
     display: flex; /* Para alinhar o botão */
@@ -181,7 +151,6 @@ h3 {
     left: 50%; /* Centraliza o botão */
     transform: translateX(-50%); /* Corrige a posição para o centro */
 }
-
 .scroll-button {
     display: inline-flex; /* Para alinhar o texto e a bolinha */
     align-items: center; /* Alinha verticalmente */
@@ -195,13 +164,11 @@ h3 {
     transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
     overflow: hidden; /* Para esconder qualquer conteúdo que ultrapasse */
 }
-
 /* Efeito de hover no botão */
 .scroll-button:hover {
     background-color: rgba(52, 152, 219, 0.1); /* Fundo leve ao passar o mouse */
     transform: scale(1.05); /* Aumenta um pouco o botão */
 }
-
 /* Estilo para a bolinha */
 .dot {
     width: 12px; /* Tamanho da bolinha */
@@ -211,7 +178,6 @@ h3 {
     margin-right: 8px; /* Espaçamento entre a bolinha e o texto */
     animation: bounce 1s infinite; /* Animação de pulso */
 }
-
 /* Animação de pulso da bolinha */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -224,71 +190,58 @@ h3 {
         transform: translateY(-5px); /* desce um pouco */
     }
 }
-
 /* Estilo do texto de rolagem */
 .scroll-text {
     font-size: 1rem; /* Tamanho do texto */
     font-weight: 600; /* Peso do texto */
 }
-
 /* Responsividade - Ajustes para dispositivos menores */
 @media (max-width: 768px) {
     /* Ajusta o tamanho da fonte e margens para o título */
     .title {
         font-size: 3rem; /* Reduz o título */
     }
-    
     .title-span {
         font-size: 3rem; /* Reduz a fonte do título principal */
         display: block;
     }
-
     /* Ajusta o tamanho da fonte da descrição */
     .description {
         font-size: 1.3rem !important; /* Tamanho menor para a descrição */
         margin-bottom: 1rem; /* Menor espaçamento */
     }
-
     /* Ajusta o botão customizado */
     .btn-custom {
         padding: 10px 16px;
         font-size: 1rem;
     }
-    
     /* Ajusta o scroll container */
     .scroll-container {
         bottom: 130px;
     }
-
     /* Ajusta a seção de vídeo */
     .video-background {
         height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
     }
-
     .video-background .background-video {
         transform: scale(1); /* Retorna ao tamanho original em telas menores */
     }
-
     /* Centraliza o menu em dispositivos menores */
     .navbar-nav {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-
     /* Ajusta o botão de rolagem para tela menor */
     .scroll-button {
         padding: 12px 8px;
         font-size: 0.9rem;
     }
 }
-
-
 /* Estilos de Botões */
 .navbar-toggler {
     background-color: var(--cor-sucesso);
 }
-
 .btn-custom {
     display: flex;
     align-items: center; /* Centraliza verticalmente o ícone e o texto */
@@ -301,22 +254,18 @@ h3 {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
     text-decoration: none; /* Remove sublinhado */
 }
-
 .btn-custom:hover {
     background-color: var(--cor-sucesso);
     color: #000000;
     transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
 }
-
 .btn-custom i {
     font-size: 1.3rem; /* Tamanho do ícone */
     margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
-
 .nav-link:hover {
     color: var(--cor-sucesso) !important;
 }
-
 /****************************** Estilização da Seção Home ******************************/
 .home-section {
     position: relative;
@@ -327,7 +276,6 @@ h3 {
     justify-content: center;
     text-align: center; /* Centraliza o texto */
 }
-
 .video-background {
     position: absolute;
     top: 0;
@@ -337,17 +285,14 @@ h3 {
     overflow: hidden;
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
-
 .background-video {
     width: 100%; /* A largura se ajusta ao container */
     height: 100%; /* A altura também se ajusta */
     object-fit: cover; /* Cobre toda a área mantendo proporção */
 }
-
 .video-background .background-video {
     transition: transform 0.3s ease; /* Transição suave ao ajustar */
 }
-
 /* Estilos do conteúdo */
 .content {
     color: var(--cor-texto-principal);
@@ -355,23 +300,19 @@ h3 {
     max-width: 800px; /* Define uma largura máxima para o conteúdo */
     margin: 0 auto; /* Centraliza horizontalmente */
 }
-
 /* Estilo para o título */
 .title {
     font-size: 4rem; /* Aumentar o tamanho do título */
     margin-bottom: 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
-
 .title-span{
     color: var(--cor-primaria); 
 }
-
 /* Destaque no título */
 .highlight {
     color: var(--cor-primaria); /* Cor para o destaque */
 }
-
 /* Estilo para a descrição */
 .description {
     font-family: "Farsan", cursive;
@@ -381,7 +322,6 @@ h3 {
     line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
     letter-spacing: 0.8px;
 }
-
 /* Estilo do botão de rolagem */
 .scroll-container {
     display: flex; /* Para alinhar o botão */
@@ -391,7 +331,6 @@ h3 {
     left: 50%; /* Centraliza o botão */
     transform: translateX(-50%); /* Corrige a posição para o centro */
 }
-
 .scroll-button {
     display: inline-flex; /* Para alinhar o texto e a bolinha */
     align-items: center; /* Alinha verticalmente */
@@ -405,13 +344,11 @@ h3 {
     transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
     overflow: hidden; /* Para esconder qualquer conteúdo que ultrapasse */
 }
-
 /* Efeito de hover no botão */
 .scroll-button:hover {
     background-color: rgba(52, 152, 219, 0.1); /* Fundo leve ao passar o mouse */
     transform: scale(1.05); /* Aumenta um pouco o botão */
 }
-
 /* Estilo para a bolinha */
 .dot {
     width: 12px; /* Tamanho da bolinha */
@@ -434,65 +371,54 @@ h3 {
         transform: translateY(-5px); /* desce um pouco */
     }
 }
-
 /* Estilo do texto de rolagem */
 .scroll-text {
     font-size: 1rem; /* Tamanho do texto */
     font-weight: 600; /* Peso do texto */
 }
-
 /* Responsividade - Ajustes para dispositivos menores */
 @media (max-width: 768px) {
     /* Ajusta o tamanho da fonte e margens para o título */
     .title {
         font-size: 3rem; /* Reduz o título */
-    }
-    
+    } 
     .title-span {
         font-size: 3rem; /* Reduz a fonte do título principal */
         display: block;
     }
-
     /* Ajusta o tamanho da fonte da descrição */
     .description {
         font-size: 1.3rem !important; /* Tamanho menor para a descrição */
         margin-bottom: 1rem; /* Menor espaçamento */
     }
-
     /* Ajusta o botão customizado */
     .btn-custom {
         padding: 10px 16px;
         font-size: 1rem;
     }
-    
     /* Ajusta o scroll container */
     .scroll-container {
         bottom: 130px;
     }
-
     /* Ajusta a seção de vídeo */
     .video-background {
         height: 100vh; /* Reduz a altura para melhor ajuste em telas menores */
     }
-
     .video-background .background-video {
         transform: scale(1); /* Retorna ao tamanho original em telas menores */
     }
-
     /* Centraliza o menu em dispositivos menores */
     .navbar-nav {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-
     /* Ajusta o botão de rolagem para tela menor */
     .scroll-button {
         padding: 12px 8px;
         font-size: 0.9rem;
     }
 }
-
 /****************************** Estilização da Seção de Serviços ******************************/
 /* Geral */
 .services-section {
@@ -500,19 +426,16 @@ h3 {
     padding: 60px 0;
     color: var(--cor-texto-principal);
 }
-
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: var(--cor-primaria);
 }
-
 .section-description {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: var(--cor-texto-principal) !important;
 }
-
 /* Estilos para os Cards */
 .service-card {
     backdrop-filter: blur(10px); /* Transparência com desfoque */
@@ -522,25 +445,21 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .service-card:hover {
     transform: translateY(-5px);
     border-color: var(--cor-primaria); /* Borda colorida ao passar o mouse */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
-
 .icon-large {
     font-size: 2.5rem;
     color: var(--cor-primaria);
     margin-bottom: 15px;
 }
-
 .category-title {
     font-size: 1.5rem;
     color: var(--cor-primaria);
     text-transform: uppercase;
 }
-
 /* Estilos para os preços com efeito 3D */
 .price-3d {
     font-size: 1.3rem;
@@ -549,26 +468,22 @@ h3 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 0.3s ease;
 }
-
 @keyframes fadeInUp {
     from { transform: translateY(10px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
-
 /* Divisores */
 hr {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin: 10px 0;
 }
-
 /****************************** Estilização da Seção de Sobre ******************************/
 .about-section {
     position: relative;
     background: url('../images/banner-bg.png') no-repeat center center fixed;
     background-size: cover;
 }
-
 .section-title {
     font-size: 2.5rem;
     color: var(--cor-primaria);
@@ -576,41 +491,34 @@ hr {
     z-index: 2;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-
 .section-description {
     font-size: 1.2rem;
     color: var(--cor-texto-secundario);
     z-index: 2;
 }
-
 .about-list {
     font-size: 1rem;
     color: var(--cor-texto-principal);
     z-index: 2;
 }
-
 .icon {
     color: var(--cor-primaria);
     margin-right: 10px;
 }
-
 .info-card {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--cor-texto-principal);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .info-card h4 {
     color: var(--cor-primaria);
     font-size: 1.5rem;
 }
-
 .info-card i {
     color: var(--cor-primaria);
     margin-right: 8px;
 }
-
 /****************************** Estilização da Seção de Galeria ******************************/
 .gallery-card {
     position: relative;
@@ -618,15 +526,12 @@ hr {
     border-radius: 8px;
     margin-bottom: 15px; /* Espaçamento inferior */
 }
-
 .gallery-card img {
     transition: transform 0.3s;
 }
-
 .gallery-card:hover img {
     transform: scale(1.1);
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -642,29 +547,24 @@ hr {
     opacity: 0;
     transition: opacity 0.3s;
 }
-
 .gallery-card:hover .overlay {
     opacity: 1;
 }
-
 /****************************** Estilização da Seção de FAQ ******************************/
 .faq-section {
     background-color: var(--cor-fundo);
     color: #ffffff;
 }
-
 .faq-section .section-title {
     font-size: 2.5rem;
     color: var(--cor-primaria);
 }
-
 .faq-section .accordion-item {
     background-color: #2a2a2a;
     border: 1px solid #444;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
 .faq-section .accordion-button {
     background-color: var(--cor-acordeon-header);
     color: #ffffff;
@@ -674,17 +574,14 @@ hr {
     transition: background-color 0.3s;
     border-radius: 8px;
 }
-
 .faq-section .accordion-button:focus {
     box-shadow: none;
 }
-
 .faq-section .accordion-button:not(.collapsed) {
     background-color: var(--cor-primaria);
     color: #ffffff;
     border-radius: 8px 8px 0 0;
 }
-
 .faq-section .accordion-body {
     background-color: #333;
     color: #ddd;
@@ -692,36 +589,29 @@ hr {
     border-radius: 0 0 8px 8px;
     border-top: 1px solid var(--cor-acordeon-header);
 }
-
 .faq-section .accordion-item:not(:last-of-type) .accordion-body {
     border-bottom: none;
 }
-
 .faq-section .accordion-item:hover .accordion-button {
     background-color: #444;
 }
-
 .faq-section p {
     font-size: 1rem;
 }
-
 /****************************** Estilização da Seção de Testemunhas ******************************/
 .gallery-card {
     position: relative;
     overflow: hidden;
 }
-
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-  
     padding: 20px;
     transition: transform 0.3s ease;
 }
-
 .gallery-card:hover .overlay {
     transform: translateY(0);
 }
