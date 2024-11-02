@@ -38,6 +38,9 @@ section {
 }
 header {
     background-color: var(--cor-menu);
+    top: 0; /* Fica fixo no topo */
+    width: 100%; /* Para garantir que ocupe toda a largura */
+    z-index: 1000; /* Coloque um z-index alto para ficar acima de outros elementos */
 }
 
 @media (max-width: 768px) {
@@ -61,6 +64,8 @@ h3 {
 /* Estilos de Botões */
 .navbar-toggler {
     background-color: var(--cor-sucesso);
+    position: relative; /* ou absolute */
+    z-index: 10; /* Certifique-se de que está acima de outros elementos */
 }
 .btn-custom {
     display: flex;
