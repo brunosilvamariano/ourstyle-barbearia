@@ -36,7 +36,3 @@ function type() {
 // Inicia a animação
 type();**/
 
-document.querySelectorAll('.elemento-animado').forEach(elem => {
-    elem.setAttribute('data-aos', 'fade-up');
-});
-AOS.refresh();

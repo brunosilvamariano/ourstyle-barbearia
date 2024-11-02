@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Cabeçalho fixo com barra de navegação -->
-    <header class="navbar navbar-expand-lg fixed-top aos-ignore" role="banner" aria-label="Cabeçalho principal">
+    <header class="navbar navbar-expand-lg fixed-top" role="banner" aria-label="Cabeçalho principal">
         <div class="container">
             <!-- Logo da Barbearia -->
             <a class="navbar-brand" href="#home" aria-label="Página inicial - Barbearia Ourstyle">
@@ -56,7 +56,7 @@
                 <!-- Botão de agendamento à direita -->
                 <div class="d-flex justify-content-center">
                     <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
-                       class="btn btn-custom" aria-label="Agendar um horário pelo WhatsApp">
+                       class="btn btn-custom" aria-label="Agendar um horário pelo WhatsApp" target="_blank">
                         <i class="fas fa-clock me-2" aria-hidden="true"></i> <!-- Ícone de relógio da Font Awesome -->
                         <span>Agendar agora</span>
                     </a>
@@ -82,11 +82,9 @@
                     <span class="highlight"> <span id="animated-text"></span></span>
                 </h1>
                 <!-- Linha abaixo do título -->
-                <hr class="underline" aria-hidden="true" role="presentation"> 
+                <hr class="underline" aria-hidden="true" role="presentation">
                 <!-- Descrição do serviço -->
-                <p class="description fw-bold fs-1">
-                    Transformando sua aparência e renovando sua confiança.
-                </p>
+                <p class="description fw-bold fs-1">Transformando sua aparência e renovando sua confiança.</p>
                 <!-- Botão de agendamento com link de contato -->
                 <div class="d-flex justify-content-center">
                     <a href="https://wa.me/47999999587?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
@@ -104,70 +102,69 @@
                 </a>
             </div>
         </section>
-        <!-- Seção de Serviços -->
-        <section class="services-section py-5" id="services" aria-labelledby="services-title">
+        <!-- Seção de SErviços -->
+        <section class="services-section py-5" id="services">
             <div class="container">
-                <!-- Cabeçalho da Seção -->
                 <header class="text-center bg-transparent mb-5">
-                    <h2 id="services-title" class="section-title fs-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Nossos Preços e Planos</h2>
-                    <p class="section-description text-muted" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
+                    <h2 class="section-title fs-2" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400">Nossos Preços e Planos</h2>
+                    <p class="section-description text-muted" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="400">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
                 </header>
                 <!-- Flexbox com 3 Cards de Altura Uniforme -->
                 <div class="row text-center d-flex align-items-stretch">
                     <!-- Card 1: Serviços Únicos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="unique-services-title" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-scissors icon-large" aria-hidden="true"></i>
-                            <h3 id="unique-services-title" class="category-title mb-4">Serviços Únicos</h3>
-                            <ul class="list-unstyled" aria-label="Lista de serviços únicos e preços">
+                            <i class="fas fa-scissors icon-large"></i>
+                            <h3 class="category-title mb-4">Serviços Únicos</h3>
+                            <ul class="list-unstyled">
                                 <li>Corte - <span class="price-3d">R$30</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Pente Único - <span class="price-3d">R$25</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Barba Completa - <span class="price-3d">R$25</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Barba Simples - <span class="price-3d">R$15</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Sobrancelha - <span class="price-3d">R$10</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Pigmentação - <span class="price-3d">R$25</span></li>
                             </ul>
                         </div>
                     </article>
                     <!-- Card 2: Combos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="combo-services-title" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-gem icon-large" aria-hidden="true"></i>
-                            <h3 id="combo-services-title" class="category-title mb-4">Combos</h3>
-                            <ul class="list-unstyled" aria-label="Lista de combos e preços">
+                            <i class="fas fa-gem icon-large"></i>
+                            <h3 class="category-title mb-4">Combos</h3>
+                            <ul class="list-unstyled">
                                 <li>Corte + Barba - <span class="price-3d">R$45</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Corte + Barba Simples - <span class="price-3d">R$40</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Corte Simples + Barba - <span class="price-3d">R$40</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Pente Único + Barba Única - <span class="price-3d">R$35</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Corte + Sobrancelha - <span class="price-3d">R$35</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>Corte + Pigmentação - <span class="price-3d">R$45</span></li>
                             </ul>
                         </div>
                     </article>
                     <!-- Card 3: Pacotes Mensais -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="monthly-packages-title" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                    <article class="col-md-4 col-sm-12 p-3 d-flex" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="400">
                         <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-calendar-alt icon-large" aria-hidden="true"></i>
-                            <h3 id="monthly-packages-title" class="category-title mb-4">Pacotes Mensais</h3>
-                            <ul class="list-unstyled" aria-label="Lista de pacotes mensais e preços">
+                            <i class="fas fa-calendar-alt icon-large"></i>
+                            <h3 class="category-title mb-4">Pacotes Mensais</h3>
+                            <ul class="list-unstyled">
                                 <li>4 Cortes - <span class="price-3d">R$100</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>4 Cortes + Barba - <span class="price-3d">R$115</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>4 Cortes + Sobrancelha - <span class="price-3d">R$140</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>4 Cortes + Barba Simples - <span class="price-3d">R$120</span></li>
-                                <hr aria-hidden="true">
+                                <hr>
                                 <li>4 Cortes + Pigmentação - <span class="price-3d">R$135</span></li>
                             </ul>
                         </div>
@@ -175,44 +172,40 @@
                 </div>
             </div>
         </section>
-        <!-- Seção Sobre Nós -->
-        <section class="about-section py-5 text-light" id="about" aria-labelledby="about-title">
+        <!-- Seção About -->
+        <section class="about-section py-5 text-light" id="about">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Coluna Esquerda: Descrição e Lista de Serviços -->
-                    <div class="col-md-8 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
-                        <h2 id="about-title" class="section-title mb-4 fs-2">O Lugar para o seu melhor estilo</h2>
+                    <div class="col-md-8 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400">
+                        <h2 class="section-title mb-4 fs-2">O Lugar para o seu melhor estilo</h2>
                         <p class="section-description mb-4">
                             Oferecemos serviços de barbearia com excelência e cuidado. Nossa equipe especializada está pronta para proporcionar uma experiência exclusiva.
                         </p>
-                        <!-- Lista de Serviços -->
-                        <ul class="about-list mb-4" aria-label="Lista de serviços oferecidos">
-                            <li><i class="fas fa-scissors icon" aria-hidden="true"></i> Corte de Cabelo</li>
-                            <li><i class="fas fa-paint-brush icon" aria-hidden="true"></i> Cor do Cabelo</li>
-                            <li><i class="fas fa-scissors icon" aria-hidden="true"></i> Modelagem de Barba</li>
-                            <li><i class="fas fa-user-friends icon" aria-hidden="true"></i> Atendimento Personalizado</li>
+                        <ul class="about-list mb-4">
+                            <li><i class="fas fa-scissors icon"></i> Corte de Cabelo</li>
+                            <li><i class="fas fa-paint-brush icon"></i> Cor do Cabelo</li>
+                            <li><i class="fas fa-scissors icon"></i> Modelagem de Barba</li>
+                            <li><i class="fas fa-user-friends icon"></i> Atendimento Personalizado</li>
                         </ul>
-                        <!-- Botões de Navegação -->
                         <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
                             <a href="#produtos" class="d-flex justify-content-center btn btn-custom" aria-label="Ver nossos produtos">
-                                <i class="fas fa-box-open me-2" aria-hidden="true"></i> 
+                                <i class="fas fa-box-open me-2"></i> <!-- Ícone de produtos -->
                                 Nossos Produtos
                             </a>
                             <a href="#services" class="d-flex justify-content-center btn btn-custom" aria-label="Ver nossos planos">
-                                <i class="fas fa-scroll me-2" aria-hidden="true"></i> 
+                                <i class="fas fa-scroll me-2"></i> <!-- Ícone de planos -->
                                 Nossos Planos
                             </a>
                         </div>
                     </div>
                     <!-- Coluna Direita: Card de Informações Práticas -->
-                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
-                        <div class="info-card p-4 rounded text-center shadow-lg" aria-labelledby="location-title working-hours-title">
-                            <!-- Localização -->
-                            <h3 id="location-title" class="fs-5"><i class="fas fa-map-marker-alt fs-5" aria-hidden="true"></i> Localização</h3>
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="400">
+                        <div class="info-card p-4 rounded text-center shadow-lg">
+                            <h4 class="fs-5"><i class="fas fa-map-marker-alt fs-5"></i> Localização</h4>
                             <p>Inserir o Endereço aqui</p>
-                            <!-- Horário de Funcionamento -->
-                            <h3 id="working-hours-title" class="mt-4 fs-5"><i class="fas fa-clock fs-5" aria-hidden="true"></i> Horário de Funcionamento</h3>
-                            <ul class="list-unstyled" aria-label="Horários de funcionamento">
+                            <h4 class="mt-4 fs-5"><i class="fas fa-clock fs-5"></i> Horário de Funcionamento</h4>
+                            <ul class="list-unstyled">
                                 <li>Segunda-feira: 08:00 - 20:00</li>
                                 <li>Terça a Sexta: 08:00 - 22:00</li>
                                 <li>Sábado: 08:00 - 15:30</li>
@@ -226,13 +219,13 @@
         <section id="gallery" class="py-5">
             <div class="container">
                 <header class="bg-transparent">
-                    <h2 class="section-title mb-4 text-center fs-2">Nossa Galeria</h2>
+                    <h2 class="section-title mb-4 text-center fs-2" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="400">Nossa Galeria</h2>
                 </header>
                 <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-inner">
                         <!-- Slide 1 -->
                         <article class="carousel-item active">
-                            <div class="row flex-nowrap">
+                            <div class="row flex-nowrap" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400">
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="gallery-card position-relative">
                                         <img src="assets/images/cards.png" class="d-block w-100" alt="Imagem de Galeria 1">
@@ -304,10 +297,10 @@
             </div>
         </section>
         <!-- Seção Faq -->
-        <section class="faq-section py-5" id="faq">
+        <section class="faq-section py-5" id="faq" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400">
             <div class="container">
                 <header class="text-center mb-5 bg-transparent">
-                    <h2 class="section-title mb-4 text-center fs-2">Perguntas Frequentes</h2>
+                    <h2 class="section-title mb-4 text-center fs-2" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="400" >Perguntas Frequentes</h2>
                 </header>
                 <div class="row">
                     <!-- Coluna Esquerda -->
@@ -403,7 +396,7 @@
         </section>
          <!-- Seção Testeminhas -->
          <section id="googleTestimonials" class="py-5">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400">
                 <header class="bg-transparent">
                     <h2 class="section-title mb-4 text-center fs-2">Depoimentos dos Clientes</h2>
                 </header>
@@ -494,12 +487,9 @@
         </section>
     </main>
     <!-- Scripts Animações AOS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Inicializa AOS
-        AOS.init({
-            disableMutationObserver: true // Evita interferências
-        });
+        AOS.init();
     </script>
     <!-- Scripts Rolagem suave -->
     <script>

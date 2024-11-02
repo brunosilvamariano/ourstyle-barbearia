@@ -22,10 +22,7 @@
     --cor-gelo-1: #95a5a6; /* Cinza claro */
 }
 
-.aos-ignore {
-    pointer-events: auto; /* Garante que o menu toggle funcione normalmente */
-    position: relative; /* Previne deslocamentos indesejados */
-}
+
 
 * {
     text-decoration: none;
@@ -74,7 +71,9 @@ h3 {
     color: var(--cor-texto-secundario);
 }
 
-
+.navbar {
+    z-index: 1000; /* ou um valor alto para garantir que fique acima de outros elementos */
+}
 /* Estilos de Botões */
 .navbar-toggler {
     background-color: var(--cor-sucesso);
