@@ -1,7 +1,7 @@
 :root {
     /* Cores principais */
-    --cor-primaria: #EC4D37; /* Verde-água (pode ser a cor do botão) */
-    --bs-orange: #EC4D37; /* Amarelo ouro */
+    --cor-primaria: #2980b9; /* Verde-água (pode ser a cor do botão) */
+    --bs-orange: #2980b9; /* Amarelo ouro */
     --cor-fundo: #1D1D1D; /* Cinza azulado escuro */
     --cor-menu: #353535; /* Cinza escuro para o fundo do menu */  
     /* Cores de texto */
@@ -9,8 +9,8 @@
     --cor-texto-secundario: #bdc3c7; /* Cinza claro para textos secundários */   
     /* Efeitos de interação */
     --cor-hover: #2980b9; /* Azul mais claro para hover */
-    --cor-erro: #EC4D37; /* Vermelho para mensagens de erro */
-    --cor-sucesso: #EC4D37; /* Verde escuro para mensagens de sucesso */
+    --cor-erro: #2980b9; /* Vermelho para mensagens de erro */
+    --cor-sucesso: #2980b9; /* Verde escuro para mensagens de sucesso */
     /* Cores adicionais */
     --cor-cinza-fosco-1: #7f8c8d; /* Cinza médio */
     --cor-cinza-fosco-2: #4d5656; /* Cinza escuro */
@@ -428,57 +428,84 @@ h3 {
 }
 /****************************** Estilização da Seção de Serviços ******************************/
 /* Geral */
+.text-center{
+    background: var(--cor-fundo);
+}
+
 .services-section {
-    background-color: var(--cor-fundo);
-    padding: 60px 0;
     color: var(--cor-texto-principal);
 }
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--cor-primaria);
-}
-.section-description {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: var(--cor-texto-principal) !important;
-}
-/* Estilos para os Cards */
-.service-card {
-    backdrop-filter: blur(10px); /* Transparência com desfoque */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda suave */
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--cor-primaria); /* Borda colorida ao passar o mouse */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-}
-.icon-large {
-    font-size: 2.5rem;
-    color: var(--cor-primaria);
-    margin-bottom: 15px;
-}
-.category-title {
+  
+  .section-title {
+    font-weight: 600;
+    color: #ffffff !important;   
+
+  }
+  .section-description {
+    font-size: 1rem;
+    color: #808080 !important;
+  }
+  /* Cards */
+  .service-card {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card i {
+    display: block;
+  }
+  
+  .category-title {
     font-size: 1.5rem;
-    color: var(--cor-primaria);
-    text-transform: uppercase;
-}
-/* Estilos para os preços com efeito 3D */
-.price-3d {
-    font-size: 1.3rem;
+    font-weight: 500;
+    color: #7c7c7c;
+  }
+  
+  .price {
     font-weight: bold;
-    color: var(--cor-primaria);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 0.3s ease;
-}
-@keyframes fadeInUp {
-    from { transform: translateY(10px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
+    color: #007bff;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  ul li span {
+    float: right;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  /* Ícones */
+  .service-card i.text-primary {
+    color: #007bff;
+  }
+  
+  .service-card i.text-success {
+    color: #28a745;
+  }
+  
+  .service-card i.text-warning {
+    color: #ffc107;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .service-card {
+      margin-bottom: 1.5rem;
+    }
+  }
 /* Divisores */
 hr {
     border: none;
@@ -621,4 +648,35 @@ hr {
 }
 .gallery-card:hover .overlay {
     transform: translateY(0);
+}
+
+.footer a:hover {
+    color: #ec4d37; /* Cor de hover */
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    transition: color 0.3s ease;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer .bi {
+    transition: transform 0.3s ease;
+}
+
+.footer .bi:hover {
+    transform: scale(1.2);
+    color: #ec4d37;
 }

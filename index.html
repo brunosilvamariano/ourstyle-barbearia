@@ -65,9 +65,12 @@
             <nav class="collapse navbar-collapse" id="navbarNav" role="navigation" aria-label="Navegação principal">
                 <ul class="navbar-nav mx-auto"> <!-- Centraliza o menu -->
                     <li class="nav-item">
-                        <a class="nav-link me-2 fw-medium fs-6" style="color: #EC4D37;" href="#home" aria-current="page">
+                        <a class="nav-link me-2 fw-bold fs-6" style="color: #7f8c8d;" href="#home" aria-current="page">
                             <span>Início</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2 fw-medium fs-6" style="color: #fff" href="#services">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-2 fw-medium fs-6" style="color: #fff" href="#services">Preços e Planos</a>
@@ -134,73 +137,63 @@
        <!-- Seção de Serviços -->
         <section class="services-section py-5" id="services" aria-labelledby="services-title">
             <div class="container">
-                <header class="text-center bg-transparent mb-5">
-                    <h2 id="services-title" class="section-title fs-2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">Nossos Preços e Planos</h2>
-                    <p class="section-description text-muted" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!</p>
+                <header class="text-center mb-5">
+                    <h2 id="services-title" class="section-title fs-2" data-aos="fade-right" data-aos-duration="1000">
+                    Nossos Preços e Planos
+                    </h2>
+                    <p class="section-description text-muted" data-aos="fade-left" data-aos-duration="1000">
+                    Confira nossa lista de serviços, combos e pacotes mensais sob medida para você!
+                    </p>
                 </header>
-                <!-- Flexbox com 3 Cards de Altura Uniforme -->
-                <div class="row text-center d-flex align-items-stretch">
-                    <!-- Card 1: Serviços Únicos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="service-unique-title">
-                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">
-                            <i class="fas fa-scissors icon-large" aria-hidden="true"></i>
-                            <h3 id="service-unique-title" class="category-title mb-4">Serviços Únicos</h3>
-                            <ul class="list-unstyled" aria-label="Lista de preços de serviços únicos">
-                                <li>Corte - <span class="price-3d">R$30</span></li>
-                                <hr>
-                                <li>Pente Único - <span class="price-3d">R$25</span></li>
-                                <hr>
-                                <li>Barba Completa - <span class="price-3d">R$25</span></li>
-                                <hr>
-                                <li>Barba Simples - <span class="price-3d">R$15</span></li>
-                                <hr>
-                                <li>Sobrancelha - <span class="price-3d">R$10</span></li>
-                                <hr>
-                                <li>Pigmentação - <span class="price-3d">R$25</span></li>
-                            </ul>
-                        </div>
+                <div class="row g-4">
+                    <!-- Card: Serviços Únicos -->
+                    <article class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-cut fs-1 text-primary mb-3"></i>
+                        <h3 class="category-title mb-3">Serviços Únicos</h3>
+                        <ul class="list-unstyled text-start">
+                        <li>Corte - <span class="price">R$30</span></li>
+                        <li>Pente Único - <span class="price">R$25</span></li>
+                        <li>Barba Completa - <span class="price">R$25</span></li>
+                        <li>Barba Simples - <span class="price">R$15</span></li>
+                        <li>Sobrancelha - <span class="price">R$10</span></li>
+                        <li>Pigmentação - <span class="price">R$25</span></li>
+                        </ul>
+                    </div>
                     </article>
-                    <!-- Card 2: Combos -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="service-combo-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">
-                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-gem icon-large" aria-hidden="true"></i>
-                            <h3 id="service-combo-title" class="category-title mb-4">Combos</h3>
-                            <ul class="list-unstyled" aria-label="Lista de preços de combos">
-                                <li>Corte + Barba - <span class="price-3d">R$45</span></li>
-                                <hr>
-                                <li>Corte + Barba Simples - <span class="price-3d">R$40</span></li>
-                                <hr>
-                                <li>Corte Simples + Barba - <span class="price-3d">R$40</span></li>
-                                <hr>
-                                <li>Pente Único + Barba Única - <span class="price-3d">R$35</span></li>
-                                <hr>
-                                <li>Corte + Sobrancelha - <span class="price-3d">R$35</span></li>
-                                <hr>
-                                <li>Corte + Pigmentação - <span class="price-3d">R$45</span></li>
-                            </ul>
-                        </div>
+                    <!-- Card: Combos -->
+                    <article class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-gem fs-1 text-success mb-3"></i>
+                        <h3 class="category-title mb-3">Combos</h3>
+                        <ul class="list-unstyled text-start">
+                        <li>Corte + Barba - <span class="price">R$45</span></li>
+                        <li>Corte + Barba Simples - <span class="price">R$40</span></li>
+                        <li>Corte Simples + Barba - <span class="price">R$40</span></li>
+                        <li>Pente Único + Barba Única - <span class="price">R$35</span></li>
+                        <li>Corte + Sobrancelha - <span class="price">R$35</span></li>
+                        <li>Corte + Pigmentação - <span class="price">R$45</span></li>
+                        </ul>
+                    </div>
                     </article>
-                    <!-- Card 3: Pacotes Mensais -->
-                    <article class="col-md-4 col-sm-12 p-3 d-flex" aria-labelledby="service-monthly-title" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">
-                        <div class="service-card p-4 rounded shadow-lg bg-transparent text-light flex-fill">
-                            <i class="fas fa-calendar-alt icon-large" aria-hidden="true"></i>
-                            <h3 id="service-monthly-title" class="category-title mb-4">Pacotes Mensais</h3>
-                            <ul class="list-unstyled" aria-label="Lista de preços de pacotes mensais">
-                                <li>4 Cortes - <span class="price-3d">R$100</span></li>
-                                <hr>
-                                <li>4 Cortes + Barba - <span class="price-3d">R$115</span></li>
-                                <hr>
-                                <li>4 Cortes + Sobrancelha - <span class="price-3d">R$140</span></li>
-                                <hr>
-                                <li>4 Cortes + Barba Simples - <span class="price-3d">R$120</span></li>
-                                <hr>
-                                <li>4 Cortes + Pigmentação - <span class="price-3d">R$135</span></li>
-                            </ul>
-                        </div>
+                    <!-- Card: Pacotes Mensais -->
+                    <article class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-calendar-alt fs-1 text-warning mb-3"></i>
+                        <h3 class="category-title mb-3">Pacotes Mensais</h3>
+                        <ul class="list-unstyled text-start">
+                        <li>4 Cortes - <span class="price">R$100</span></li>
+                        <li>4 Cortes + Barba - <span class="price">R$115</span></li>
+                        <li>4 Cortes + Sobrancelha - <span class="price">R$140</span></li>
+                        <li>4 Cortes + Barba Simples - <span class="price">R$120</span></li>
+                        <li>4 Cortes + Pigmentação - <span class="price">R$135</span></li>
+                        </ul>
+                    </div>
                     </article>
                 </div>
             </div>
         </section>
+  
        <!-- Seção About -->
         <section class="about-section py-5 text-light" id="about" aria-labelledby="about-title">
             <div class="container">
@@ -516,6 +509,45 @@
             </div>
         </section>
     </main>
+    <footer class="footer py-5 text-white" style="background-color: #2c2c2c;">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Logo e Sobre -->
+                <div class="col-md-4">
+                    <img src="assets/images/logo.svg" alt="Logo da empresa" class="mb-3" style="max-width: 150px;">
+                    <p class="text-white">Ajudamos você a transformar seu estilo com serviços de alta qualidade e excelência.</p>
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li><a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+    
+                <!-- Links Rápidos -->
+                <div class="col-md-4">
+                    <h5 class="mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#services" class="text-white text-decoration-none">Serviços</a></li>
+                        <li><a href="#gallery" class="text-white text-decoration-none">Galeria</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contato -->
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contato</h5>
+                    <p><i class="bi bi-geo-alt"></i> Rua Exemplo, 123, Centro, São Paulo</p>
+                    <p><i class="bi bi-telephone"></i> (11) 98765-4321</p>
+                    <p><i class="bi bi-envelope"></i> contato@empresa.com</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-muted mb-0">© 2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
     <!-- Scripts Animações AOS-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- Scripts JavaScript -->
